@@ -1,0 +1,122 @@
+body {
+    height: 98vh;
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+}
+
+header {
+    font-family: 'sonsie one';
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+main {
+    height: 100%;
+}
+.gallery {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 5px;
+}
+.box {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 2;
+    border-radius: 15px;
+    background-size: cover;
+    height: 150px;
+}
+.x {
+    background-image: none;
+    grid-column: span 1;
+}
+.a {
+    background-image: url(images/a.jpg);
+    grid-column: span 2;
+}
+.y {
+    background-image: none;
+    grid-column: span 1;
+}
+.b {
+    background-image: url(images/b.jpg);
+}
+.c {
+    background-image: url(images/c.jpg);
+}
+.d {
+    background-image: url(images/d.jpg);
+}
+.e {
+    background-image: url(images/e.jpg);
+}
+.f {
+    background-image: url(images/f.jpg);
+}
+.g {
+    background-image: url(images/g.jpg);
+}
+.h {
+    background-image: url(images/h.jpg);
+}
+.i {
+    background-image: url(images/i.jpg);
+}
+.j {
+    background-image: url(images/j.jpg);
+}
+.k {
+    background-image: url(images/k.jpg);
+}
+.l {
+    background-image: url(images/l.jpg)
+}
+.v {
+    background-image: none;
+}
+.m {
+    background-image: url(images/m.jpg);
+}
+.n {
+    background-image: url(images/n.jpg);
+}
+.o {
+    background-image: url(images/o.jpg);
+}
+.p {
+    background-image: url(images/p.jpg);
+}
+.q {
+    background-image: url(images/q.jpg);
+}
+@media only screen and (min-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .y {
+        display: none;
+    }
+    .z {
+        background-image: none;
+    }
+    header {
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 950px) {
+    .gallery {
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 75%;
+    }
+    header {
+        text-align: left;
+    }
+    .z {
+        display: none;
+    }
+}
